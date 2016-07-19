@@ -1,0 +1,111 @@
+/*
+Theme Name: Eagles Lodge
+Description: This is a child theme for Eagles Lodge
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.8.5
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+
+ /* **** header *****/
+ #top-bar {
+ 	line-height: 18px;
+ 	a {
+ 		color: white;
+ 	}
+ 	a:hover {
+ 		border-bottom: 0px;
+ 	}
+ 	.left-text {
+ 		#mobile-phone {
+ 			display: block;
+ 			a {
+ 				color: white;
+ 			}
+ 		}
+ 	}
+ }
+ #masthead {
+ 	//background-size:  cover;
+ 	#logo {
+ 		font-family: "Dutch801", serif;
+ 		vertical-align: top;
+ 		padding-top: 0px;
+ 		padding-left: 0px;
+ 		padding-right: 0px;
+ 		font-size: 1.7em;
+ 		text-align: center;
+
+ 		a {
+ 			// add background s.t. title shows up.
+	 		padding-bottom: 20px;
+	 		//background-color: rgba(26, 93, 138, 0.4 );
+	 		background-color: rgba(253,253,253,0.83);
+	 		border-radius: 5px;
+ 			.logo-name, .logo-second {
+ 				color: $siteTitleColor;
+ 				//text-shadow: black 1px 2px;
+ 				text-shadow: rgba(140,140, 140, 0.69) 1px 2px;
+ 			}
+ 			.logo-second {
+	 			font-size: 1.9em;
+	 			letter-spacing: 4px;
+	 			line-height: 80%;
+	 		}
+ 		}
+ 		
+ 	}
+ 	.left-links {
+ 		vertical-align: bottom;
+ 		.wide-nav-search {
+ 			float:right;
+ 			.header-eagle {
+	 			max-height: 250px;
+
+	 		}
+ 		}
+		.header-eagle {
+			float: right;
+ 			max-height: 250px;
+ 		}
+ 		
+ 	}
+ }
+/* =Theme customization starts here */
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+/* ******* sidebar *********** */
+#secondary {
+	#calendar_1 {
+		margin: auto;
+	}
+	#TA_certificateOfExcellence756 {
+		width: 148px;
+		margin: auto;
+	}
+}
+
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+/*** footer *****/
+footer {
+	.footer-2 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.footer .widget {
+	margin-bottom: 0px;
+}
+
+/******* these should stay at bottom of this file **********/
+@import "partials/print"; 
+@import "partials/media"; 

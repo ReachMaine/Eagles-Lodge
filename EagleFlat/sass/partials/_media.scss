@@ -1,0 +1,78 @@
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 48em) {
+	.hide-laptop {
+		display: none!important;
+		visibility: hidden;
+		padding: 0px;
+		margin: 0px;
+		height: 0px;
+		width: 0px;
+	}
+}
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears.
+	.mobile-hidden {
+		display: none;
+		visibility: hidden;
+		padding: 0px;
+		margin: 0px;
+		height: 0px;
+		width: 0px;
+	}
+	#masthead {
+		.left-links {
+			display:block!important;
+			.eagle-block {
+				display: block!important;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				img {
+					max-width: 180px;
+				}
+			}
+		}
+	}
+}
+
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+
+}
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+	
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+	}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	}
+/* breakpoints for ux_banners (& site title)  */
+@media only screen and (max-width: 500px) {
+	#masthead {
+	 	#logo {	
+	 		font-size: 100%;
+	 		.logo-second {
+	 			letter-spacing: normal;
+	 		}
+
+		}
+	}
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (max-width: 380px) { // small mobile
+	#masthead .left-links .eagle-block {
+		visibility: hidden;
+		display: none;
+	}
+}

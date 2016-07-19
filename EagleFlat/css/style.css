@@ -1,0 +1,148 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: Eagles Lodge
+Description: This is a child theme for Eagles Lodge
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.8.5
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+@font-face {
+  font-family: "Dutch801";
+  src: url("Dutch 801 Roman SWA.ttf"); }
+
+h1 {
+  font-family: 'Dutch801'; }
+
+.type-page h1.entry-title, .search-results .text-center h1.entry-title {
+  font-family: "Dutch801";
+  text-transform: none;
+  color: #09629e;
+  font-size: 2.4em; }
+
+/* **** header *****/
+#top-bar {
+  line-height: 18px; }
+  #top-bar a {
+    color: white; }
+  #top-bar a:hover {
+    border-bottom: 0px; }
+  #top-bar .left-text #mobile-phone {
+    display: block; }
+    #top-bar .left-text #mobile-phone a {
+      color: white; }
+
+#masthead #logo {
+  font-family: "Dutch801", serif;
+  vertical-align: top;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1.7em;
+  text-align: center; }
+  #masthead #logo a {
+    padding-bottom: 20px;
+    background-color: rgba(253, 253, 253, 0.83);
+    border-radius: 5px; }
+    #masthead #logo a .logo-name, #masthead #logo a .logo-second {
+      color: #851730;
+      text-shadow: rgba(140, 140, 140, 0.69) 1px 2px; }
+    #masthead #logo a .logo-second {
+      font-size: 1.9em;
+      letter-spacing: 4px;
+      line-height: 80%; }
+#masthead .left-links {
+  vertical-align: bottom; }
+  #masthead .left-links .wide-nav-search {
+    float: right; }
+    #masthead .left-links .wide-nav-search .header-eagle {
+      max-height: 250px; }
+  #masthead .left-links .header-eagle {
+    float: right;
+    max-height: 250px; }
+
+/* =Theme customization starts here */
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+/* ******* sidebar *********** */
+#secondary #calendar_1 {
+  margin: auto; }
+#secondary #TA_certificateOfExcellence756 {
+  width: 148px;
+  margin: auto; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+/*** footer *****/
+footer .footer-2 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.footer .widget {
+  margin-bottom: 0px; }
+
+/******* these should stay at bottom of this file **********/
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 48em) {
+  .hide-laptop {
+    display: none !important;
+    visibility: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    width: 0px; } }
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  .mobile-hidden {
+    display: none;
+    visibility: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    width: 0px; }
+
+  #masthead .left-links {
+    display: block !important; }
+    #masthead .left-links .eagle-block {
+      display: block !important;
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+      #masthead .left-links .eagle-block img {
+        max-width: 180px; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners (& site title)  */
+@media only screen and (max-width: 500px) {
+  #masthead #logo {
+    font-size: 100%; }
+    #masthead #logo .logo-second {
+      letter-spacing: normal; } }
+@media only screen and (max-width: 380px) {
+  #masthead .left-links .eagle-block {
+    visibility: hidden;
+    display: none; } }

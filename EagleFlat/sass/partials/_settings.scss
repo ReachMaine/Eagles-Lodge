@@ -1,0 +1,37 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #a62425;
+//$siteTitleColor:#F6B94F; //color of site title;
+$siteTitleColor: #851730; //color of site title;
+$titleFontColor: #09629E; 
+$facebook_blue: #3a589d;
+$reach_orange:  #f58220; 
+// Background colors: 
+
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$flat-primary-color:  #004DB2; // set in theme options -> style & colors;
+$flat-secondary-color: #2f68b3; // set in theme options -> style & colors;
+/* Typography ------------------------------------------ */
+
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 3px;
+}
+@font-face {
+	font-family: "Dutch801";
+	src: url("Dutch 801 Roman SWA.ttf");
+}
+h1 {
+	font-family: 'Dutch801';
+}
+.type-page h1.entry-title, .search-results .text-center h1.entry-title {
+	font-family:"Dutch801";
+	text-transform: none;
+	color: $titleFontColor;
+	font-size: 2.4em;
+}
