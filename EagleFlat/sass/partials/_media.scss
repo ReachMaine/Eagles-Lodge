@@ -15,6 +15,16 @@
 	}
 }
 /***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 767px) {  // a wee bit less
+	.hide-mobile {
+		display: none;
+		visibility: hidden;
+		padding: 0px;
+		margin: 0px;
+		height: 0px;
+		width: 0px;
+	}
+}
 @media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears.
 	.mobile-hidden {
 		display: none;
@@ -47,7 +57,7 @@
 }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
-	
+
 }
 
 /* X-Large Displays: 1400px and up */
@@ -59,7 +69,7 @@
 /* breakpoints for ux_banners (& site title)  */
 @media only screen and (max-width: 500px) {
 	#masthead {
-	 	#logo {	
+	 	#logo {
 	 		font-size: 100%;
 	 		.logo-second {
 	 			letter-spacing: normal;
